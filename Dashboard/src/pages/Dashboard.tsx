@@ -5,8 +5,6 @@ import EngagementChart from '../components/EngagementChart';
 import MiddleMetrics from '../components/MiddleMetrics';
 import ContentRepurposer from '../components/ContentRepurposer';
 import SeoOptimizer from '../components/SeoOptimizer';
-import TargetAudienceAnalyzer from '../components/TargetAudienceAnalyzer';
-import AnimatedButton from '../components/AnimatedButton';
 import { scrapeInstagramProfile, InstagramData } from '../services/instagramService';
 
 const Dashboard: React.FC = () => {
