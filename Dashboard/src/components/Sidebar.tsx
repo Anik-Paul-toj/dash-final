@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Drawer,
   List,
-  Box,
   useTheme,
   styled,
   Divider,
@@ -17,7 +16,6 @@ import {
   Dashboard as DashboardIcon,
   LibraryBooks as ContentLibraryIcon,
   BarChart as AnalyticsIcon,
-  People as AudienceIcon,
   Person as ProfileIcon,
   ExitToApp as SignOutIcon,
 } from '@mui/icons-material';

@@ -15,7 +15,6 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Divider,
   Chip,
   Avatar,
   List,

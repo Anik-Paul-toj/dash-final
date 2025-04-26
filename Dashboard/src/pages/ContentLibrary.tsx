@@ -87,7 +87,6 @@ const ContentLibrary: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filterAnchorEl, setFilterAnchorEl] = useState<null | HTMLElement>(null);
   const [sortAnchorEl, setSortAnchorEl] = useState<null | HTMLElement>(null);
-  const [selectedItem, setSelectedItem] = useState<number | null>(null);
   const [itemAnchorEl, setItemAnchorEl] = useState<null | HTMLElement>(null);
   
   // Filter states
@@ -106,8 +105,7 @@ const ContentLibrary: React.FC = () => {
     setSortAnchorEl(event.currentTarget);
   };
   
-  const handleItemMenuClick = (event: React.MouseEvent<HTMLElement>, id: number) => {
-    setSelectedItem(id);
+  const handleItemMenuClick = (event: React.MouseEvent<HTMLElement>) => {
     setItemAnchorEl(event.currentTarget);
   };
   
@@ -121,7 +119,6 @@ const ContentLibrary: React.FC = () => {
   
   const handleItemMenuClose = () => {
     setItemAnchorEl(null);
-    setSelectedItem(null);
   };
   
   const handleCreateContent = () => {
@@ -410,7 +407,7 @@ const ContentLibrary: React.FC = () => {
                       bgcolor: 'rgba(0, 0, 0, 0.7)',
                     }
                   }}
-                  onClick={(e) => handleItemMenuClick(e, item.id)}
+                  onClick={handleItemMenuClick}
                 >
                   <MoreVertIcon />
                 </IconButton>

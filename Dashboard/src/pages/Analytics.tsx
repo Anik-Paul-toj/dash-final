@@ -10,13 +10,11 @@ import {
   Tab,
   Tabs,
   useTheme,
-  Paper,
   Table,
   TableHead,
   TableBody,
   TableRow,
   TableCell,
-  Divider,
 } from '@mui/material';
 import {
   TrendingUp,
